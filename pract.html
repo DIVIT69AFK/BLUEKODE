@@ -1,0 +1,35 @@
+<html> 
+<head> 
+    <script src="prac.js" defer></script> 
+    
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"> 
+        <h1 style = "color: rgb(252, 253, 253);font-size: 24px; text-align: center; margin-top: 5vh;"> CALCULATOR </h1> 
+</head> 
+<body background="wallpaper4.jpg" style="background-size: cover; background-repeat: no-repeat; background-attachment: fixed; margin: 0; height: 100vh;"></body> 
+
+    
+    <label for="id1" style="color:white; text-align: center; position: fixed; left: 50%; transform: translateX(-50%); top: 15vh;">Enter a number:</label> 
+    <input type="number" id="id1" placeholder="Enter a number" style="background-color: rgba(0, 0, 0, 0); position: fixed; color: white; left: 50%; transform: translateX(-50%); top: 20vh;">
+    <br><br> 
+
+    <label for="id2" style="color:white; text-align: center; position: fixed; left: 50%; transform: translateX(-50%); top: 28vh;">Enter another number:</label> 
+    <input type="number" id="id2" placeholder="Enter another number" style="background-color: rgba(0, 0, 0, 0); position: fixed; color: white; left: 50%; transform: translateX(-50%); top: 33vh;">
+    <br><br> 
+
+    
+    <button id="add" onclick="add()" style="background-color: rgba(0, 0, 0, 0); text-align: center; position: fixed; color:white; left: 50%; transform: translateX(-50%); top: 43vh; width: 100px;">Add</button>
+    <br><br> 
+    <button id="sub" onclick="subtract()" style="background-color: rgba(0, 0, 0, 0); text-align: center; position: fixed; color:white; left: 50%; transform: translateX(-50%); top: 50vh; width: 100px;">Subtract</button> 
+    <br><br> 
+    <button id="mul" onclick="multiply()" style="background-color: rgba(0, 0, 0, 0); text-align: center; position: fixed; color:white; left: 50%; transform: translateX(-50%); top: 57vh; width: 100px;">Multiply</button> 
+    <br><br> 
+    <button id="div" onclick="divide()" style="background-color: rgba(0, 0, 0, 0); text-align: center; position: fixed; color:white; left: 50%; transform: translateX(-50%); top: 64vh; width: 100px;">Divide</button> 
+    <br><br> 
+
+    
+    <div id="result" style="background-color: rgba(0, 0, 0, 0); position: fixed; color:white; left: 50%; transform: translateX(-50%); top: 75vh; font-size: 20px;">RESULT: <span id="result-value"></span></div>
+    <br><br> 
+
+</body> 
+</div> 
+</html>

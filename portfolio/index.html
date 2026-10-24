@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divit's Portfolio</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+
+    <header>
+        <h1>Divit</h1>
+        <p>Hello! I am a student learning web development and exploring the universe.</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#interests">Interests</a>
+            <a href="#skills">Skills</a>
+            <a href="#interactive">Interactive</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="gojo.jfif" alt="Dark anime styled illustration" width="20" height="20">
+                <figcaption>Exploring the cosmos through code and art.</figcaption>
+            </figure>
+            <p>I am a beginner student currently learning how to build websites using HTML, CSS, and JavaScript. I enjoy understanding how things work from the ground up.</p>
+            <p>You can check out my favorite space exploration resource here: <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">NASA Astronomy Picture of the Day</a></p>
+        </section>
+
+        <section id="interests">
+            <h2>My Interests</h2>
+            <ul>
+                <li>Cosmology & Space</li>
+                <li>Dark Matter & Dark Energy</li>
+                <li>Coding & Web Development</li>
+                <li>Anime & Manga Artwork</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Building proper page structure and text content.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Styling elements, colors, and using Flexbox for layout.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity, handling inputs, and using conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive">
+            <h2>Interactive Section</h2>
+            
+            <div class="box">
+                <p id="greeting-text">Welcome to my portfolio website!</p>
+                <button id="greet-btn">Click to Change Greeting</button>
+            </div>
+
+            <div class="box">
+                <label for="visitor-name">Enter your name:</label>
+                <input type="text" id="visitor-name" placeholder="Type your name here">
+                <button id="name-btn">Submit Name</button>
+                <p id="personal-greeting"></p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="c-name">Name:</label>
+                <input type="text" id="c-name" name="name" placeholder="Your name" required>
+
+                <label for="c-email">Email:</label>
+                <input type="text" id="c-email" name="email" placeholder="Your email" required>
+
+                <label for="c-msg">Message:</label>
+                <textarea id="c-msg" name="message" placeholder="Type your message here." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-feedback"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Divit</p>
+    </footer>
+
+    <script src="practice.js"></script>
+</body>
+</html>
+
