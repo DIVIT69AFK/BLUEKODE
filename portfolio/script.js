@@ -1,30 +1,33 @@
-const greetBtn = document.querySelector("#greet-btn");
-const greetingText = document.querySelector("#greeting-text");
 
-greetBtn.addEventListener("click", function() {
-    greetingText.textContent = "Thank you for visiting my dark anime-themed portfolio!";
-});
+const greeting = document.querySelector("#greeting");
+const greetButton = document.querySelector("#greet-button");
 
-const nameBtn = document.querySelector("#name-btn");
-const visitorNameInput = document.querySelector("#visitor-name");
-const personalGreeting = document.querySelector("#personal-greeting");
+function sayHello() {
+    greeting.textContent = "Hello! I'm Divit.";
+}
 
-nameBtn.addEventListener("click", function() {
-    const enteredName = visitorNameInput.value.trim();
+greetButton.addEventListener("click", sayHello);
 
-    if (enteredName === "") {
-        personalGreeting.textContent = "Please enter a valid name!";
+const nameInput = document.querySelector("#name-input");
+const welcomeButton = document.querySelector("#welcome-button");
+const welcomeMessage = document.querySelector("#welcome-message");
+
+function greetVisitor() {
+    const visitorName = nameInput.value.trim();
+
+    if (visitorName === "") {
+        welcomeMessage.textContent = "Please enter your name first.";
     } else {
-        personalGreeting.textContent = "Hello, " + enteredName + "! Glad to have you here.";
+        welcomeMessage.textContent = "Hello, " + visitorName + "!";
     }
-});
+}
+
+welcomeButton.addEventListener("click", greetVisitor);
 
 const contactForm = document.querySelector("#contact-form");
-const formFeedback = document.querySelector("#form-feedback");
+const formMessage = document.querySelector("#form-message");
 
 contactForm.addEventListener("submit", function(event) {
     event.preventDefault();
-    formFeedback.textContent = "Thank you! Your message has been received.";
-    contactForm.reset();
+    formMessage.textContent = "Thanks for your message!";
 });
-
